@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+
+<body>
+    <header>
+        <div id="cabeza"></div>
+        <div class="cabecera">
+            <p style="text-align: center; color: darkolivegreen; padding: 40px; font-size: 34px;"> Nueva Cuenta</p>
+        </div>
+    </header>
+
+    <div class="row" style="max-width: 500px; margin: 0 auto">
+    <div class="col s12">
+         Cliente
+          <div class="input-field inline">
+            <input id="cliente_inline"  placeholder="Juanito Alimaña" type="text" class="validate" disabled>
+            <label for="cliente_inline"></label>
+        </div>
+    </div>
+    <div class="col s12">
+        Vendedor
+         <div class="input-field inline">
+           <input id="vendedor_inline" type="" class="validate">
+           <label for="cliente_inline"></label>
+       </div>
+   </div>
+   <div class="col s12">
+    Fecha
+     <div class="input-field inline">
+       <input id="fecha_inline" type="date" class="validate">
+       <label for="fecha_inline"></label>
+   </div>
+</div>
+<div class="col s12">
+    Modo de pago    
+    <select class="browser-default" id="pago">
+      <option value="" disabled selected>Mensual</option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+    </select>
+    <br><br><br><br>
+    <hr size="2px" color="black" />
+</div>
+<section>    
+    <p style="text-align: center; color: rgb(0, 0, 0);font-size: 34px;" >Agregado articulos</p>
+    <div class="col s12">
+        Articulo
+        <select class="browser-default" id="articulo">
+            <option value="" disabled selected></option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+          </select>
+       <div class="col s12">
+        Cantidad
+         <div class="input-field inline" >
+           <input id="cantidad_inline" type="" class="validate">
+           <label for="cantidad_inline"></label>
+           <button class="waves-effect waves-light btn">Agregar</button>
+       </div>
+    </div>
+    </div>
+
+
+</section>
+<button class="waves-effect waves-light btn" style="background-color: green; color: white; width: 180px;">Agregar</button>
+<button class="waves-effect waves-light btn" style="background-color: red; color: white; width: 180px; float: right;">Cancelar</button>
+
+
+</div>
+
+</body>
+<script src="js/materialize.min.js"></script>
+
+</html>
